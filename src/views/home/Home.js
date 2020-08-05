@@ -1,13 +1,13 @@
 import React from "react";
 
-import FormsGridContainer from "features/forms/FormsGridContainer";
-import FormUploader from "features/forms/FormUploader";
+import SignInButton from "features/auth/SignInButton";
+import UploadPhoto from "features/photos/UploadPhoto";
 
 export default function Home() {
   return (
     <div>
-      <FormUploader />
-      <FormsGridContainer />
+      <SignInButton />
+      <UploadPhoto />
     </div>
   );
 }

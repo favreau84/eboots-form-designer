@@ -1,27 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import store from "./app/store";
-import { Provider } from "react-redux";
-import { BrowserRouter as Router } from "react-router-dom";
+import App from "app/App";
 import * as serviceWorker from "./serviceWorker";
-
-// styles
-import { ThemeProvider } from "@material-ui/core/styles";
-import theme from "styles/theme";
-
-// routes
-import Routes from "views/Routes";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <ThemeProvider theme={theme}>
-        <Router>
-          <Routes />
-        </Router>
-      </ThemeProvider>
-    </Provider>
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
